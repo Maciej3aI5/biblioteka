@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="container">
+        <header class="w-full flex justify-center items-center h-24 bg-stone-900 col-span-5">
+            <p class="block text-white text-5xl">Libray</p>
+        </header>
+        <div id="main-cointainer">
+            <main class="col-start-2 col-end-5 grid grid-rows-1 grid-cols-1 gap-2 2xl:grid-cols-3 xl:grid-cols-2 ">
+                <button class="flex justify-center items-center h-80"><img src="add-6491203_640.png" width="200" id="dodaj"></button>
+            </main>
+        </div>
+        <form>
+            <div class="text-3xl" id="modal">
+            <label class="mt-6 block mb-6" for="tytul">Tytuł:</label>
+            <input required type="text" class="mb-6 border-slate-700 rounded-lg border-4" id="tytul" placeholder="tytuł">
+            <label class="block mb-6" for="autor">Autor:</label>
+            <input required type="text" class="mb-6 border-slate-700 rounded-lg border-4" id="autor" placeholder="autor">
+            <label class="block mb-6" for="strony">Ile Stron:</label>
+            <input required type="number" class="border-slate-700 rounded-lg border-4 mb-6" id="strony" placeholder="ile_stron">
+            <button id="potwierdz" class="text-white mb-6 rounded-lg h-12 w-3/5 bg-blue-500" type="submit">Dodaj</button>
+            <label class="block mb-6" for="strony">Czy przeczytales?</label>
+            <input class="mb-6 w-10 h-10" type="checkbox" id="checkbox">
+            </div>
+        </form>
+        <div id="overlay">
+            
+        </div>
+       <script src="index.js"></script>
+</body>
+</html>
