@@ -79,7 +79,7 @@ document.getElementById('potwierdz').addEventListener("click", (event) => {
         }
         document.querySelector('main').appendChild(div);
     } else {
-        alert('Tytuł i autor muszą mieć co najmniej 3 litery!!!');
+        alert('Field Author and Title must contain at least 3 letters!!!');
     }
 });
 
