@@ -48,22 +48,22 @@ document.getElementById('potwierdz').addEventListener("click", (event) => {
         const lista = document.createElement('ul');
 
         const lista1 = document.createElement('li');
-        lista1.textContent = "Tytuł: " + ksiazka.tytul;
+        lista1.textContent = "Title: " + ksiazka.tytul;
         lista1.classList.add('mb-6');
 
         const lista2 = document.createElement('li');
-        lista2.textContent = "Autor: " + ksiazka.autor;
+        lista2.textContent = "Author: " + ksiazka.autor;
         lista2.classList.add('mb-6');
 
         const lista3 = document.createElement('li');
-        lista3.textContent = "Strony: " + ksiazka.strony;
+        lista3.textContent = "Pages: " + ksiazka.strony;
 
         const button = document.createElement('button');
-        button.textContent = "Usuń";
+        button.textContent = "Delete";
         button.id=losowa;
         button.classList.add('delete', 'text-white', 'mt-6', 'rounded-lg', 'h-12', 'w-3/5', 'bg-red-500', 'delete-book');
         const button2 = document.createElement('button');
-        button2.textContent = "Nie przeczytano";
+        button2.textContent = "To read";
         button2.classList.add('text-white', 'mt-6', 'rounded-lg', 'h-12', 'w-3/5', 'bg-red-500', 'stan');
         lista.appendChild(lista1);
         lista.appendChild(lista2);
