@@ -10,7 +10,7 @@ document.addEventListener("click",(event)=>{
             button2.classList.remove("bg-green-500");
             button2.classList.add("bg-red-500");
         } else {
-            button2.textContent = "Przeczytano";
+            button2.textContent = "Readed";
             button2.classList.remove("bg-red-500");
             button2.classList.add("bg-green-500");
         }
