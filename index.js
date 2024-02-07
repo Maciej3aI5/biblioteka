@@ -5,8 +5,8 @@ document.addEventListener("click",(event)=>{
     }
     if (event.target.classList.contains('stan')) {
         const button2 = event.target;
-        if (button2.textContent === "Przeczytano") {
-            button2.textContent = "Nie przeczytano";
+        if (button2.textContent === "Readed") {
+            button2.textContent = "Not readed";
             button2.classList.remove("bg-green-500");
             button2.classList.add("bg-red-500");
         } else {
@@ -73,7 +73,7 @@ document.getElementById('potwierdz').addEventListener("click", (event) => {
         div.appendChild(button);
         div.style.flexDirection = "column";
         if(document.getElementById('checkbox').checked){
-            button2.textContent = "Przeczytano";
+            button2.textContent = "Readed";
             button2.classList.remove("bg-red-500");
             button2.classList.add("bg-green-500");
         }
